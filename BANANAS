@@ -1,17 +1,20 @@
 def bananabid(my_player_number, my_bananas, monkey_position, opponent_bananas, past_bid_list, turn_number):
 
-  last_turn = past_bid_list[-1]
-  opponent_bid = last_turn[2 - my_player_number]
-	
-  if turn_number == 1:
-      return 0
-  elif my_bananas >= (3*opponent_bananas + 3):
-      return opponent_bananas + 1
-  elif monkey_position == -2 and my_player_number == 2:
-      return opponent_bananas + 1
-  elif monkey_position == 2 and my_player_number == 1:
-      return opponent_bananas + 1 
-  elif opponent_bid >= 50:
-      return 0
-  elif opponent_bid <= 50:
-      return 50
+	last_turn = past_bid_list[-1]
+	opponent_bid = last_turn[2 - my_player_number]
+	if my player_number == 1:
+		to_win = monkey_position + 3
+	if my player_number == 2:
+		to_win = monkey_position - 3
+	if turn_number == 1:
+		return 0
+	elif my_bananas >= ((opponent_bananas + 1)*(to_win):
+		return opponent_bananas + 1
+	elif monkey_position == -2 and my_player_number == 2:
+		return opponent_bananas + 1
+	elif monkey_position == 2 and my_player_number == 1:
+		return opponent_bananas + 1 
+	elif opponent_bid >= 50:
+		return 0
+	elif opponent_bid <= 50:
+		return 50
