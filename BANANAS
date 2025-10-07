@@ -9,9 +9,9 @@ def bananabid(my_player_number, my_bananas, monkey_position, opponent_bananas, p
 		if my_player_number == 1:
 			to_win = monkey_position + 3
 		if my_player_number == 2:
-			to_win = 1 - monkey_position
+			to_win = 3 - monkey_position
 		if my_bananas >= (opponent_bananas + 1)*(to_win):
-			return opponent_bananas + 3
+			return opponent_bananas + 1
 		elif (monkey_position == 2):
                         if(my_player_number == 1):
                                 return opponent_bananas + 1
