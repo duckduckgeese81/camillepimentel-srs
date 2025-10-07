@@ -18,5 +18,5 @@ def bananabid(my_player_number, my_bananas, monkey_position, opponent_bananas, p
 			return opponent_bananas + 1 
 		elif opponent_bid >= 50:
 			return 0
-		elif opponent_bid <= 50:
+		elif opponent_bid <= 50: 
 			return 50
