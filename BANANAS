@@ -7,7 +7,7 @@ def bananabid(my_player_number, my_bananas, monkey_position, opponent_bananas, p
 		last_turn = past_bid_list[-1]
 		opponent_bid = last_turn[2 - my_player_number]
 		if my_player_number == 1:
-			to_win = monkey_position + 3
+			to_win = monkey_position - 3
 		if my_player_number == 2:
 			to_win = 3 - monkey_position
 		if my_bananas >= (opponent_bananas + 1)*(to_win):
